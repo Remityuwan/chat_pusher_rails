@@ -1,5 +1,4 @@
 require 'pusher'
 
-config_pusher = YAML.load_file('config/pusher.yml')[Rails.env]
-Pusher.url = "http://#{config_pusher['access_key']}:#{config_pusher['access_key_secret']}@api.pusherapp.com/apps/{config_pusher['app_id']}"
+Pusher.url = "http://6caf983b340d5c269ac6:dcb8c7f05ebbad1c90f9@api.pusherapp.com/apps/98979"
 Pusher.logger = Rails.logger

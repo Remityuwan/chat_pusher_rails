@@ -7,7 +7,7 @@ window.console.log(message);
 }
 };
 
-var pusher = new Pusher('<%= @pusher_access_key %>');
+var pusher = new Pusher('6caf983b340d5c269ac6');
 var channel = pusher.subscribe('general_channel');
 channel.bind('chat_event', function(data) {
 var messagelog = document.getElementById('messagelog');
